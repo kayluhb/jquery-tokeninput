@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="styles/token-input.css" type="text/css" />
     <link rel="stylesheet" href="styles/token-input-facebook.css" type="text/css" />
+    <link rel="stylesheet" href="styles/token-input-chosen.css" type="text/css" />
 
     <script type="text/javascript">
     $(document).ready(function() {
@@ -63,6 +64,33 @@
         $(document).ready(function() {
             $("#demo-input-facebook-theme").tokenInput("http://shell.loopj.com/tokeninput/tvshows.php", {
                 theme: "facebook"
+            });
+        });
+        </script>
+    </div>
+
+
+    <h2 id="theme">Chosen Theme</h2>
+    <div>
+        <input type="text" id="demo-input-chosen-theme" name="blah2" />
+        <input type="button" value="Submit" />
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#demo-input-chosen-theme").tokenInput([
+                {id: 7, name: "Ruby"},
+                {id: 11, name: "Python"},
+                {id: 13, name: "JavaScript"},
+                {id: 17, name: "ActionScript"},
+                {id: 19, name: "Scheme"},
+                {id: 23, name: "Lisp"},
+                {id: 29, name: "C#"},
+                {id: 31, name: "Fortran"},
+                {id: 37, name: "Visual Basic"},
+                {id: 41, name: "C"},
+                {id: 43, name: "C++"},
+                {id: 47, name: "Java"}
+            ], {
+                theme: "chosen"
             });
         });
         </script>
